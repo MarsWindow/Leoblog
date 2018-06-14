@@ -14,10 +14,23 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
+            $table->bigIncrements('id');
+            $table->unsignedInteger('mobile');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('encrypt');
+            $table->string('nickname')->index();
+            $table->decimal('amount',5,2);
+            $table->unsignedInteger('score');
+            $table->string('face');
+            $table->unsignedInteger('regtime');
+            $table->unsignedInteger('logintime');
+            $table->string('loginip');
+            $table->unsignedMediumInteger('loginnum');
+            $table->unsignedSmallInteger('groupid');
+            $table->unsignedTinyInteger('message');
+            $table->unsignedTinyInteger('status');
+            $table->unsignedTinyInteger('islock');
             $table->rememberToken();
             $table->timestamps();
         });

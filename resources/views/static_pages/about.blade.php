@@ -34,13 +34,13 @@
     <div class="container zerogrid">
         <div class="col-full"><div class="wrap-col">
         	<div id="header-nav-container">
-            
+
                     <a href="#">
                     <img src="images/logo.png" id="logo" />
                     </a>
-                    
+
 					<!-- Navigation Menu -->
-                    
+
 	<ul class="sf-menu"><li class="menu-item"><a href="index.html">Home</a></li>
 	<li class="menu-item"><a href="blog.html">Blog</a></li>
 <li class="menu-item"><a href="#">Features</a>
@@ -51,59 +51,59 @@
 </ul>
 </li>
 <li class="menu-item current-menu-item"><a href="about.html">About us</a></li>
-</ul>	
+</ul>
                     <!-- End Navigation Menu -->
-                    
+
                     <div class="clear"></div>
-                    
+
             </div>
 			</div>
         </div>
-    <div class="clear"></div> 
+    <div class="clear"></div>
     </div>
     <div class="spacing-30"></div>
-    <!-- End Header -->  
-    
-    
+    <!-- End Header -->
+
+
     <!-- Start Main Container -->
     <div class="container zerogrid">
-        
+
     <div class="col-full page-conainer">
 	<div class="wrap-col">
     <div class="post-margin">
     <h5 class="page-title">About us</h5>
-    
+
     <!-- Start Entry -->
     <p>Morbi vitae urna pellentesque, placerat nibh id, mollis nibh. Integer massa tellus, luctus a tortor ut, auctor sagittis nisi. Donec ullamcorper quam et venenatis tempus. Nulla sollicitudin dui in cursus congue. Vestibulum eget dui mauris. Maecenas non rhoncus lorem. Donec id augue condimentum, elementum ligula et, condimentum ipsum.</p>
 
 
 <div class="symple-clear-floats"></div>
     <!-- End Entry -->
-    
+
     </div>
 	</div>
     </div>
-    
+
     <div class="clear"></div>
         </div>
 	<!-- End Main Container -->
-	
-	
-    
-    
+
+
+
+
     <!-- Start Footer -->
     <div class="spacing-30"></div>
     <div class="container zerogrid">
         <div id="footer-container" class="col-full">
-        <div class="wrap-col">	
+        <div class="wrap-col">
             <!-- Footer Copyright -->
             <p>&copy; Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
             <!-- End Footer Copyright -->
-            
+
             <!-- Footer Logo -->
 			<img src="images/footer-logo.png" id="footer-logo" />
             <!-- End Footer Logo -->
-        
+
         <div class="clear"></div>
 		</div>
         </div>

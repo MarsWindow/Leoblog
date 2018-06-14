@@ -3,21 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class StaticPagesController extends Controller
 {
-    public function home()
+    public function home(User $user)
     {
-        return '主页';//view('static_pages/home');
+        return view('static_pages/home',compact('user'));
     }
 
     public function blog()
     {
-        return 'bokeye';//view('static_pages/blog');
+        return view('static_pages/blog');
     }
 
     public function about()
     {
-        return 'guanyuye';//view('static_pages/about');
+        return view('static_pages/about');
     }
 }
