@@ -15,21 +15,21 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('mobile');
+            $table->unsignedInteger('mobile')->default(0);
             $table->string('username');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('encrypt');
-            $table->string('nick')->index();
-            $table->decimal('amount',5,2);
-            $table->unsignedInteger('score');
-            $table->string('face');
-            $table->string('loginip');
-            $table->unsignedMediumInteger('loginnum');
-            $table->unsignedSmallInteger('groupid');
-            $table->unsignedTinyInteger('message');
-            $table->unsignedTinyInteger('status');
-            $table->unsignedTinyInteger('islock');
+            $table->string('encrypt')->default('');
+            $table->string('nick')->index()->default('');
+            $table->decimal('amount',9,2)->default('0.00');
+            $table->unsignedInteger('score')->default(0);
+            $table->string('face')->default('');
+            $table->string('loginip')->default('');
+            $table->unsignedMediumInteger('loginnum')->default(0);
+            $table->unsignedSmallInteger('groupid')->default(0);
+            $table->unsignedTinyInteger('message')->default(1);
+            $table->unsignedTinyInteger('status')->default(1);
+            $table->unsignedTinyInteger('islock')->default(1);
             $table->rememberToken();
             $table->timestamps();
         });
