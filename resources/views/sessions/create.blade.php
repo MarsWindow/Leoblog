@@ -20,7 +20,7 @@
                         <label class="icon" for="password">
                             <i class="fa fa-lock"></i>
                         </label>
-                        <input class="form-control" id="password" type="password" placeholder="请输入密码" name="password" required="" aria-required="true" value="{{ old('password') }}">
+                        <input class="form-control" id="password" type="password" placeholder="请输入密码" name="password" required="" aria-required="true" value="{{ old('password') }}"><span>(<a href="{{ route('password.request') }}">忘记密码？</a>)</span>
                     </div>
                     <!-- <div class="form-group">
                         <label class="icon" for="code">
