@@ -190,17 +190,29 @@
 
         <div class="col-lg-4 col-md-4"><!--right content-->
             <div class="wrap-col">
+                @if (Auth::check())
                 <div class="widget-container">
                     <h6 class="widget-title"><i class="fa fa-user"></i>用户中心</h6>
                     <div class="widget-login-style">
-
                         <div class="post-mask"><img width="80" src="/images/test/photo.jpeg"/>小李-欢迎登录</div>
 
-                        <button class="btn btn-info" data-toggle="modal" data-target="#myLogin">本地账号</button>
+                        @include('shared._status_form')
+
+                        <h3>微博动态列表</h3>
+                        @include('shared._feed')
+
+                    </div>
+                </div>
+                @else
+                <div class="widget-container">
+                    <h6 class="widget-title"><i class="fa fa-user"></i>用户中心</h6>
+                    <div class="widget-login-style">
+                        <button class="btn btn-info"><a href="href="{{ route('login') }}"">本地账号</a></button>
                         <button class="btn btn-info"><a href="">QQ登录</a></button>
                         <button class="btn btn-danger"><a href="">微博登录</a></button>
                     </div>
                 </div>
+                @endif
 
                 <div class="widget-container">
                     <h6 class="widget-title"><i class="fa fa-search"></i>即刻搜索</h6>
