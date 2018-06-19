@@ -195,7 +195,7 @@
                     <h6 class="widget-title"><i class="fa fa-user"></i>用户中心</h6>
                     <div class="widget-login-style">
                         <div class="post-mask"><img width="80" src="/images/test/photo.jpeg"/>小李-欢迎登录</div>
-
+                        @include('shared._stats', ['user' => Auth::user()])
                         @include('shared._status_form')
 
                         <h3>微博动态列表</h3>
